@@ -251,7 +251,7 @@ fieldset>select {
     opacity: 1;
     position: relative;
     bottom: 210px;
-    /* animation: float 5s ease-in-out infinite; */
+    animation: float 5s ease-in-out infinite;
     cursor: pointer;
 }
 
