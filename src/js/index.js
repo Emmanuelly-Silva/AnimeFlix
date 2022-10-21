@@ -14,9 +14,13 @@ let checkObjectAnime = false;
 function checkListAnimes() {
     if (listAnimes.length === 0) {
         document.getElementById("empty-anime-list").innerHTML = "Nenhum anime";
+        btnStartListFavorites.classList.add("disabled");
+        btnStartListWatching.classList.add("disabled");
     }
     else {
         document.getElementById("empty-anime-list").style.display = "none";
+        btnStartListFavorites.classList.remove("disabled");
+        btnStartListWatching.classList.remove("disabled");
     }
 }
 
