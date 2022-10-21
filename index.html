@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeFlix</title>
+    <link rel="shortcut icon" href="./src/img/icon-page.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/animations.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title"><i class="fa-solid fa-clapperboard"></i>ANIMEFLIX</h1>
+
+        <ul class="nav-header">
+            <a href="#favorites-animes" id="btn-favorites"><li><i class="fa-solid fa-heart"></i>Favoritos</li></a>
+            <a href="#watching-animes" id="btn-watching"><li><i class="fa-solid fa-tv"></i>Assistindo</li></a>
+            <a href="#" id="btn-add"><li>Adicionar anime</li></a>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="alert" id="alert">
+            <span id="alert-url"></span>
+        </div>
+
+        <div class="add-anime" id="add-anime">
+            <form class="add-informations" id="add-informations">
+                <h1>Adicionar anime</h1>
+                <fieldset class="information">
+                    <label for="name">Nome do anime</label>
+                    <input type="text" name="name" placeholder="Nome" id="name" required>
+                    <label for="link">Url da capa do anime</label>
+                    <input type="text" name="link" placeholder="Url" id="link" required>
+                </fieldset>
+
+                <fieldset class="information">
+                    <label for="status">Selecione um dos status</label>
+                    <select name="status" id="status">
+                        <option value="watching">Assistindo</option>
+                        <option value="favorite">Favorito</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="rating">
+                    <p>Escolha uma nota de avaliação</p>
+                    <input type="radio" id="cm_star-empty" name="rating" value="" checked>
+                    <label for="cm_star-1"><i class="fa" title="1"></i></label>
+                    <input type="radio" id="cm_star-1" name="rating" value="1" required>
+                    <label for="cm_star-2"><i class="fa" title="2"></i></label>
+                    <input type="radio" id="cm_star-2" name="rating" value="2" required>
+                    <label for="cm_star-3"><i class="fa" title="3"></i></label>
+                    <input type="radio" id="cm_star-3" name="rating" value="3" required>
+                    <label for="cm_star-4"><i class="fa" title="4"></i></label>
+                    <input type="radio" id="cm_star-4" name="rating" value="4" required>
+                    <label for="cm_star-5"><i class="fa" title="5"></i></label>
+                    <input type="radio" id="cm_star-5" name="rating" value="5" required>
+                </fieldset>
+                <button type="button" class="btn-add" onclick="addAnime()">Adicionar</button>
+            </form>
+        </div>
+
+        <div class="catalog" id="catalog">
+            <h2>Lista de animes</h2>
+            <div class="anime-list" id="anime-list">
+                <p id="empty-anime-list"></p>
+            </div>
+        </div>
+    </div>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

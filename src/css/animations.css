@@ -1,0 +1,27 @@
+@keyframes float {
+    0% {
+        transform: translate(-1%, 2%);
+    }
+
+    50% {
+        transform: translate(-1%, -7%);
+    }
+
+    100% {
+        transform: translate(-1%, 2%);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(100%);
+    }
+
+    50% {
+        transform: scale(105%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
