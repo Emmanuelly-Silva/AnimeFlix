@@ -34,7 +34,7 @@ As seguintes tecnologias foram usadas no desenvolvimento do projeto:
 <br>
 
 ## 💡 Como acessar o projeto:
-#### Para acessar, basta clicar no link a seguir: .
+#### Para acessar, basta clicar no link a seguir: https://emmanuelly-silva.github.io/AnimeFlix/.
 <br><br>
 
 ## 📝 Autora:
