@@ -18,6 +18,24 @@ header {
     border-bottom: 0.4px solid #FFF2E7;
 }
 
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.link-github {
+    display: flex;
+    align-items: flex-start;
+    padding-right: 10px;
+}
+
+.link-github i {
+    color: white;
+    font-size: 40px;
+}
+
 #title {
     flex-direction: column;
     color: #fff;
